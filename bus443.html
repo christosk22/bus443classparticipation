@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--     Meta tag is a self closing tag     -->
+    <meta charset="UTF-8" />
+    <title>BUS 443</title>
+</head>
+<!--     All the content of the html page will be defined inside the body tag -->
+<body>
+    <!--     There are 6 header elements in html. h1 to h6 -->
+    <h1> This is a H1 header </h1>   <h2> This is a H2 header </h2>
+
+    <h4> This is a H4 header </h4>
+
+    <!-- header elements are block elements and they occupy the entire width of the browser window -->
+    
+    <!-- The paragraph tag (block element) -->
+	<p> This is a new paragraph </p>
+
+	<!-- Adding hyper links to HTML -->
+	<!-- The a tag is an inline tag and it occupies space as the much as the text to be displayed -->
+
+	<!-- Use the br tag/element to add a line break -->
+	<a target="_blank" href="https://www.ncsu.edu">Link to NC State's website</a> <br/>
+	<a href="https://www.cdc.gov">Link to the CDC</a> <br/><br/><br/>
+	
+	<!-- 1 px = 1 / 96 of an inch -->
+	
+	<img alt = "Image of a bird" width = "400" height = "300" src = "birdimage.jpg" />
+	
+	<!-- div blocks are used to divide the html into multiple sections -->
+
+	<div>
+    <h2>Section 2</h2>
+    <!-- Unordered list -->
+    <ul>
+        <li>BMW</li>
+        <li>Honda</li>
+        <li>Toyota</li>
+    </ul>
+
+	<!-- Ordered list -->
+
+	<ol>
+		<li>NC State</li>
+		<li>UNC</li>
+		<li>Duke</li>
+	</ol>
+
+	<table border = "1">
+		<thead>
+			<tr>
+				<th>Day</th>
+				<th>Class</th>
+				<th>Time</th>
+			</tr>
+		</thead>
+		<tbody>
+    <tr>
+        <td>Monday</td>
+        <td>BUS 440</td>
+        <td>10:15 AM</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td>BUS 443</td>
+        <td>1:30 PM</td>
+    </tr>
+    <tr>
+        <td colspan = "3">Wednesday no class</td>
+    </tr>
+    <tr>
+        <td>Thursday</td>
+        <td>BUS 442</td>
+        <td>11:45 AM</td>
+    </tr>
+</tbody>
+</table>
+		</div>
+		
+		<!-- hr adds a horizontal line to the html -->
+<hr/>
+<div>
+    <h2>Section 3</h2>
+    <code>z = x+y</code> <br/>
+    <code>z = x<sup>2</sup> + y<sub>2</sub></code> <br/>
+    <p>This is a new paragraph</p>
+    <pre>This is        preformatted text</pre> <br/>
+
+    <form method="POST" action="#">
+        <!-- the for attribute of the label tag will have the same value of the id element of the input tag -->
+        <label for="uname">Username: </label>
+        <input id="uname" type="text" /> <br/>
+        
+        <label>Password:</label>
+        <input id="passwd" type="password" value="" /> <br/>
+        
+        <input id="submitbutton" type="submit" />
+    </form><br/>
+
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/r10g5gERB04?si=UwoTsfxXOzRO5x5B" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+
+
+
+			</div>
+	</body>
+</html>
