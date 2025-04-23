@@ -1,0 +1,41 @@
+{% extends "faculty/base.html" %}
+
+{% block content %}
+
+<div class="container-fluid text-center mt-5">
+  <h4>Faculty Nominations</h4>
+  <div class="mt-5">
+    <canvas id="mycanvas" width="300px" height="100px"></canvas>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+<script>
+  let mychart = document.getElementById("mycanvas");
+  let newchart = new Chart(mychart, {
+    type: 'bar',
+    data: {
+      labels: ["Teaching", "Research", "Outreach"],
+      datasets: [{
+        label: "Faculty Nominations",
+        data: [3, 4, 5],  
+        backgroundColor: ['rgb(245, 10, 33, 0.8)']
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          ticks: {
+            beginAtZero: true,
+            stepSize: 1
+          }
+        }
+      }
+    }
+  });
+</script>
+
+
+
+{% endblock %}
